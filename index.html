@@ -1,40 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario - HTML</title>
+    <title>Formulário - HTML</title>
 </head>
+
 <body>
     <fieldset>
-        <legend><h3>Nome</h3></legend>
-    <ol>
-        
-        <li></li>
-    </ol>
- </fieldset>
+        <legend>
+            <h3>Nome</h3>
+        </legend>
+        <ol>
+            <li></li>
+        </ol>
+    </fieldset>
     <br>
     <fieldset>
-        <legend><h3>Perguntas</h3></legend>
-    <ol type="a">
-        
-        
-        <li>Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?<br>
-        </li>
-        <li>Na tag &lt;input&gt: com atributo type="radio" ou type="checkbox", para que serve o atributo "checked"?</li>
-        <li>Na tag &lt;input&gt; para que serve o atributo "value"?</li>
-        <li>Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez?</li>
-        <li>Para que serve a tag &lt;label&gt;? Para que serve o atributo "for" nessa tag?</li>
-        <li>Na tag &lt;option&gt; para que serve o atributo "selected"?</li>
-        <li>Nas tags de formulário para que serve o atributo "required"?</li>
-        <li>Para que serve a tag &lt;textarea&gt;?</li>
-        <li>Na tag &lt;form&gt; para que serve o atributo "action"?</li>
-        <li>Na tag &lt;form&gt; para que serve o atributo "method"? </li>
-        <li>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag &lt;form&gt;?</li>
-        <li>Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será usado para fazer upload de arquivos?</li>
-        <li>O que as tags &lt;fieldset&gt; e &lt;legend&gt; produzem?</li>
-    </ol>
-</fieldset><br>
-    <button><a href="./formulario.html">Formulario</a></button>
+        <legend>
+            <h3>Perguntas</h3>
+        </legend>
+        <ol type="a">
+
+
+            <li><b>Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?</b>
+                <br>
+                <p>O placeholder atributo especifica uma breve dica que descreve o valor esperado de um campo de entrada
+                    (por exemplo, um valor de amostra ou uma breve descrição do formato esperado).
+                    A dica curta é exibida no campo de entrada antes que o usuário insira um valor.
+                    Nota: O placeholder atributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel,
+                    email e senha.</p>
+                <br>
+            </li>
+            <li><b>Na tag &lt;input&gt: com atributo type="radio" ou type="checkbox", para que serve o atributo
+                    "checked"?</b> <br>
+                <p> O checked atributo é um atributo booleano.
+                    Quando presente, especifica que um &lt;input&gt; elemento deve ser pré-selecionado (marcado) quando
+                    a página for carregada.
+                    O checked atributo pode ser usado com &lt;input type="checkbox"&gt; e &lt;input type="radio"&gt;.
+                    O checked atributo também pode ser definido após o carregamento da página, com JavaScript.</p>
+            </li>
+            <li><b>Na tag &lt;input&gt; para que serve o atributo "value"?</b>
+                <p>
+                    O atributo input Value especifica um valor inicial para um campo de entrada
+                </p>
+            </li>
+            <li><b>Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que
+                    apenas um deles fique marcado de cada vez?</b>
+                <p>
+                    O grupo de rádios deve compartilhar o mesmo nome (o valor do nameatributo) para ser tratado como um
+                    grupo. Depois que o grupo de opções for criado, selecionar qualquer botão de opção nesse grupo
+                    desmarcará automaticamente qualquer outro botão de opção selecionado no mesmo grupo. Você pode ter
+                    quantos grupos de rádio quiser em uma página, desde que cada grupo tenha seu próprio nome
+                </p>
+            </li>
+            <li><b>Para que serve a tag &lt;label&gt;? Para que serve o atributo "for" nessa tag?</b>
+                <p>
+                    Tag Label: é importante para os campos de formulários. Ela especifica qual o "rótulo" do input (a
+                    que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”), e ajuda na
+                    experiência do usuário durante a utilização e preenchimento do formulário.
+                    agrupar e organizar determinados campos de um formulário, que são as tags &lt;legend&gt; (pode ser
+                    traduzido como uma legenda, no sentido de descrição) e a &lt;fieldset&gt; (conjunto de campos).
+
+                    A sintaxe da tag fieldset é:
+
+                    &lt;fieldset&gt;
+                    Conjunto de campos
+                    que queremos agrupar
+                    aqui
+                    &lt;input...&gt;
+                    &lt;/fieldset&gt;
+                    Atributo “For”: O atributo for faz um tipo de link entre a label e o input . Logo o for tem que
+                    apontar para o ID do input . Outra forma de uso é que vc pode fazer vários tipos de customização
+                    pelo CSS escondendo o input default do browser por exemplo e usando a própria label como se fosse o
+                    botão.
+                </p>
+            </li>
+            <li><b>Na tag &lt;option&gt; para que serve o atributo "selected"?</b>
+                <p>
+                    O elemento option permite o atributo selected , que, quando marcado, deixa a opção correspondente
+                    pré-selecionada.
+                </p>
+            </li>
+            <li><b>Nas tags de formulário para que serve o atributo "required"?</b>
+                <p>O required atributo é um atributo booleano.<br>
+                    Quando presente, especifica que um campo de entrada deve ser preenchido antes do envio do
+                    formulário.
+                    <h5>Funciona com os seguintes tipos de entrada:</h5>
+                    <ul>
+                        <li>Texto</li>
+                        <li>Pesquisa</li>
+                        <li>Url</li>
+                        <li>Telefone</li>
+                        <li>E-mail</li>
+                        <li>Senha</li>
+                        <li>Seletores de data</li>
+                        <li>Número</li>
+                        <li>Caixa de Seleção</li>
+                        <li>Rádio</li>
+                        <li>Arquivo</li>
+                    </ul>
+                </p>
+            </li>
+            <li><b>Para que serve a tag &lt;textarea&gt;?</b>
+                <p>
+                    <p>Define um controle de entrada de texto multilinha.É usado em um formulário para coletar entradas
+                        do usuário, como comentários ou avaliações.</p>
+                    <p>Uma área de texto pode conter um número ilimitado de caracteres e o texto é renderizado em uma
+                        fonte de largura fixa (geralmente Courier).
+                        O tamanho de uma área de texto é especificado pelos atributos <span style="color: red;">cols e
+                            rows</span>(ou com CSS). <br>
+
+                        O <span style="color: red;">name</span> atributo é necessário para referenciar os dados do
+                        formulário após o envio do formulário (se você omitir o nameatributo, nenhum dado da área de
+                        texto será enviado).
+
+                        O <span style="color:red">id</span> atributo é necessário para associar a área de texto a um
+                        rótulo.
+
+                        Dica: Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!
+                            
+                            </p>
+                </p>
+            </li>
+            <li><b>Na tag &lt;form&gt; para que serve o atributo "action"?</b>
+                <p>
+                    O manipulador de formulário é especificado no ACTION atributo do formulário.O manipulador de
+                    formulário normalmente é um arquivo no servidor com um script para processar dados de entrada.
+
+                </p>
+            </li>
+            <li><b>Na tag &lt;form&gt; para que serve o atributo "method"?</b>
+                <p>
+                    O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário. Os dados do
+                    formulário podem ser enviados como variáveis de URL (com method="get") ou como pós-transação HTTP
+                    (com method="post").O método HTTP padrão ao enviar dados de formulário é GET.
+                </p>
+            </li>
+            <li><b>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser
+                    o valor do atributo "method" na tag &lt;form&gt;?</b> <p>
+                        O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+                        Os dados do formulário podem ser enviados como variáveis de URL (com method="get") ou como
+                        pós-transação HTTP (com method="post").
+                        O método HTTP padrão ao enviar dados de formulário é GET.
+                        Notas sobre GET:
+                        <li>Acrescenta os dados do formulário ao URL, em pares nome/valor</li>
+                       <ol type="a"> <li>NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado ficam visíveis
+                            no URL!)</li>
+                        <li>O comprimento de um URL é limitado (2.048 caracteres)</li> 
+                        <li>Útil para envios de formulários onde um usuário deseja marcar o resultado</li>
+                        <li>GET é bom para dados não seguros, como strings de consulta no Google
+                            Notas sobre POST:</li>
+                        <li> Acrescenta os dados do formulário ao corpo da solicitação HTTP (os dados do formulário enviado
+                            não são mostrados na URL)</li>
+                        <li>POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.</li>
+                        <li>Os envios de formulários com POST não podem ser marcados como favoritos
+                            Dica: Sempre use POST se os dados do formulário contiverem informações
+                            confidenciais ou pessoais!</li></ol> 
+                    </p></li>
+            <li><b>Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será
+                    usado para fazer upload de arquivos?</b>
+                <p>
+                    Para um formulário que será usado para fazer upload de arquivos, o valor a ser informado no atributo
+                    "method" na tag &lt;form&gt; deve ser "POST". O método "POST" é comumente usado para enviar dados do
+                    formulário, incluindo arquivos, para o servidor. Com esse método, os dados são enviados no corpo da
+                    solicitação HTTP, em vez de serem anexados à URL como no método "GET". Portanto, o atributo "method"
+                    ficaria assim:
+
+                    <code><br>html
+                        &lt;form method="POST" action="/upload" enctype="multipart/form-data"&gt;
+                        &lt;!-- Campos do formulário --&gt;
+                        &lt;input type="file" name="arquivo"&gt;
+                        &lt;input type="submit" value="Enviar"&gt;
+                        &lt;/form&gt;<br></code>
+
+
+                    Observe que também é necessário adicionar o atributo "enctype" com o valor "multipart/form-data".
+                    Isso indica ao navegador que o formulário contém dados de arquivo a serem enviados.
+                </p>
+            </li>
+            <li><b>O que as tags &lt;fieldset&gt; e &lt;legend&gt; produzem?</b>
+                <p>
+                    &lt;fieldset&gt;
+                    A &lt;fieldset&gt; tag é usada para agrupar elementos relacionados em um formulário.
+                    A &lt;fieldset&gt; tag desenha uma caixa ao redor dos elementos relacionados.
+                    Dica: A tag &lt;legend&gt; é usada para definir uma legenda para o &lt;fieldset&gt;elemento.
+
+                    &lt;legend&gt;
+                    A &lt;legend&gt; tag define uma legenda para o elemento &lt;fieldset&gt; .
+                    Atributos Globais
+                    A &lt;legend&gt; tag também suporta atributos globais em HTML .
+                    Atributos do Evento
+                    A &lt;legend&gt; tag também suporta atributos de evento em HTML .
+                </p>
+            </li>
+        </ol>
+    </fieldset><br>
+    <button><a href="./formulario.html">Formulário</a></button>
 </body>
+
 </html>
